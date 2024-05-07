@@ -2,6 +2,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import numpy as np
+#github test
 
 def create_economic_chart(x, y_datasets, chart_title, subtitle, y_label, image_path='logo.jpg'):
     # Load the background image
@@ -35,7 +36,7 @@ def create_economic_chart(x, y_datasets, chart_title, subtitle, y_label, image_p
         sns.lineplot(x=x, y=y, ax=ax, color=darker_pastel_palette[i % len(darker_pastel_palette)], label=f'Data Series {i+1}')
 
     # Setting labels and titles
-    if y_label.lower() != "time":  # Conditionally set the x-axis label
+    if y_label.lower() != "time":  # Conditionally set the x-axis label, pointless if it just says "Time"
         ax.set_xlabel('Time', fontsize=12, fontweight='bold', color='#888B8D')
     ax.set_ylabel(y_label, fontsize=12, fontweight='bold', color='#888B8D')
     plt.suptitle(chart_title, fontsize=16, fontweight='bold', color='#494B4D')
