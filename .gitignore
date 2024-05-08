@@ -1,0 +1,25 @@
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+
+# Ignore all .log files
+*.log
+
+# Ignore API keys file
+APIkeys.py
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore specific directories
+tmp/
+build/
+
+# Files to leave off:
+
+basic_chart_template.py
+testing.py
+test.py
+GIT-HUB-COMMANDS.txt
+
