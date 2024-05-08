@@ -1,0 +1,20 @@
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+
+# Ignore all .log files
+*.log
+
+# Ignore API keys file
+APIkeys.py
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore specific directories
+tmp/
+build/
+
+# My embarrassing amateur notes:
+UsingGitHub.txt

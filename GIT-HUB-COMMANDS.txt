@@ -1,0 +1,83 @@
+
+USE ONE LINER TO UPDATE Template.py:
+Bash> git pull origin main && git add . && git commit -m "Update Template.py " && git push origin main
+PS> git pull origin main; git add .; git commit -m "Update Template.py"; git push origin main
+
+
+
+... broken down:
+
+git pull origin main
+git add Template.py
+git add .
+git commit -m "Update Template.py to remove extreme datapoints if not in the last 13 observations"
+git push origin main
+
+
+
+
+OK all working! So next time I update Template.py on my PC what do I do to then save it to github
+ChatGPT
+Great to hear that everything is working now! For future updates to Template.py or any other files in your repository, here’s a straightforward workflow to follow to ensure your changes are saved and pushed to GitHub:
+
+Step 1: Make Your Changes
+Open Template.py in your editor (like Visual Studio Code or any other editor), make the necessary changes, and save the file.
+
+Step 2: Stage the Changes
+Open your command prompt or terminal and navigate to your project directory if you're not already there:
+
+bash
+Copy code
+cd C:\Users\WINDOWS\Desktop\CODING\RoboMacro_May2024
+Stage the changes you made to Template.py using the git add command. This command starts tracking changes to the file:
+
+bash
+Copy code
+git add Template.py
+If you've made changes to multiple files and want to stage all changes at once, you can use:
+
+bash
+Copy code
+git add .
+This command adds all modified files to the staging area.
+
+Step 3: Commit the Changes
+Commit your staged changes with a descriptive message. This records your changes in the local git repository:
+
+bash
+Copy code
+git commit -m "Update Template.py with new features"
+Replace the message with something descriptive about what changes or enhancements you have made.
+
+Step 4: Pull the Latest Changes from GitHub
+Before pushing your changes to GitHub, it's a good practice to pull the latest changes from the remote repository to ensure there are no conflicts:
+
+bash
+Copy code
+git pull origin main
+This step is crucial if others are also working on the same repository. It updates your local branch with the latest upstream changes and helps avoid merge conflicts.
+
+Step 5: Push the Changes to GitHub
+Finally, push your committed changes to GitHub:
+
+bash
+Copy code
+git push origin main
+This command sends your committed changes to the main branch of the remote repository (i.e., GitHub). If you are working on a different branch, replace main with your branch name.
+
+Additional Tips
+Check Status: Use git status frequently to see which files are modified and staged for commit.
+View Changes: If you want to see what changes have been staged, use:
+bash
+Copy code
+git diff --cached
+This shows the difference between your last commit and what’s currently staged.
+Handling Conflicts: If your git pull results in conflicts, you'll need to manually resolve them in the affected files. After resolving conflicts, you need to add the resolved files to staging again and then continue as normal.
+Regular Commits: Make commits often with clear messages. This practice keeps your changes documented and organized, and reduces the risk of losing important work.
+By following this workflow, you can efficiently manage and synchronize your local development changes with your GitHub repository.
+
+
+
+
+
+
