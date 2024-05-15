@@ -89,6 +89,10 @@ def create_economic_chart(x, y_datasets, chart_title, subtitle, y_label, labels=
     # Set the alpha after legend creation
     legend.get_frame().set_alpha(0.7)
 
+
+    # Add text "@robomacro" in strong red in the bottom left corner
+    plt.text(0.05, 0.05, '@robomacro', color='red', fontsize=10, fontweight='bold', ha='left', va='bottom', transform=ax.transAxes)
+
     # Save and display the chart
-    plt.savefig(f'{chart_title.lower().replace(" ", "_")}.png', dpi=300)
+    plt.savefig(f'{chart_title.lower().replace(" ", "_")}.jpg', dpi=300)
     plt.show()
